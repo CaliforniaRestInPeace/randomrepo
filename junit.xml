@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="2" errors="0" time="4.227">
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2023-07-12T07:14:14" time="3.548" tests="2">
+    <testcase classname=" Test getting pokemon details" name=" Test getting pokemon details" time="1.089">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  Bulbasaur
+Received:
+
+
+Ignored nodes: comments, script, style
+&lt;html&gt;
+  &lt;head /&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;div
+        class=&quot;App&quot;
+      &gt;
+        &lt;h8k-navbar
+          header=&quot;Pokemon Details&quot;
+        /&gt;
+        &lt;div
+          class=&quot;mt-50 layout-column justify-content-center align-items-center&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined px-50 py-30&quot;
+            style=&quot;width: 900px;&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-header&quot;
+            &gt;
+              &lt;h4
+                class=&quot;card-title&quot;
+              &gt;
+                Pokemon Details
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;card-body&quot;
+            &gt;
+              &lt;div&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    ID: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon-id&quot;
+                  /&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    Name: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon-name&quot;
+                  /&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    Height: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon-height&quot;
+                  /&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    Weight: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon.weight&quot;
+                  /&gt;
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p&gt;
+            &lt;button
+              data-testid=&quot;pokemon-prev&quot;
+              disabled=&quot;&quot;
+            &gt;
+              Previous Evolution
+            &lt;/button&gt;
+            &lt;button
+              data-testid=&quot;pokemon-next&quot;
+              disabled=&quot;&quot;
+            &gt;
+              Next Evolution
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;input
+              data-testid=&quot;id-input&quot;
+              placeholder=&quot;Pokemon Id&quot;
+              type=&quot;number&quot;
+              value=&quot;1&quot;
+            /&gt;
+            &lt;button
+              class=&quot;text&quot;
+              data-testid=&quot;random-pokemon&quot;
+            &gt;
+              Get Pokemon
+            &lt;/button&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    at /projects/challenge/src/App.test.js:33:41
+    at runWithExpensiveErrorDiagnosticsDisabled (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:47:12)
+    at checkCallback (/projects/challenge/node_modules/@testing-library/dom/dist/wait-for.js:127:77)
+    at checkRealTimersCallback (/projects/challenge/node_modules/@testing-library/dom/dist/wait-for.js:121:16)
+    at Timeout.task [as _onTimeout] (/projects/challenge/node_modules/jsdom/lib/jsdom/browser/Window.js:516:19)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7)</failure>
+    </testcase>
+    <testcase classname=" Test getting next evolution" name=" Test getting next evolution" time="1.021">
+      <failure>Error: expect(element).not.toBeDisabled()
+
+Received element is disabled:
+  &lt;button data-testid=&quot;pokemon-next&quot; disabled=&quot;&quot; /&gt;
+
+Ignored nodes: comments, script, style
+&lt;html&gt;
+  &lt;head /&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;div
+        class=&quot;App&quot;
+      &gt;
+        &lt;h8k-navbar
+          header=&quot;Pokemon Details&quot;
+        /&gt;
+        &lt;div
+          class=&quot;mt-50 layout-column justify-content-center align-items-center&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined px-50 py-30&quot;
+            style=&quot;width: 900px;&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-header&quot;
+            &gt;
+              &lt;h4
+                class=&quot;card-title&quot;
+              &gt;
+                Pokemon Details
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;card-body&quot;
+            &gt;
+              &lt;div&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    ID: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon-id&quot;
+                  /&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    Name: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon-name&quot;
+                  /&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    Height: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon-height&quot;
+                  /&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;
+                    Weight: 
+                  &lt;/strong&gt;
+                  &lt;span
+                    data-testid=&quot;pokemon.weight&quot;
+                  /&gt;
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p&gt;
+            &lt;button
+              data-testid=&quot;pokemon-prev&quot;
+              disabled=&quot;&quot;
+            &gt;
+              Previous Evolution
+            &lt;/button&gt;
+            &lt;button
+              data-testid=&quot;pokemon-next&quot;
+              disabled=&quot;&quot;
+            &gt;
+              Next Evolution
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;input
+              data-testid=&quot;id-input&quot;
+              placeholder=&quot;Pokemon Id&quot;
+              type=&quot;number&quot;
+              value=&quot;1&quot;
+            /&gt;
+            &lt;button
+              class=&quot;text&quot;
+              data-testid=&quot;random-pokemon&quot;
+            &gt;
+              Get Pokemon
+            &lt;/button&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    at /projects/challenge/src/App.test.js:59:45
+    at runWithExpensiveErrorDiagnosticsDisabled (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:47:12)
+    at checkCallback (/projects/challenge/node_modules/@testing-library/dom/dist/wait-for.js:127:77)
+    at checkRealTimersCallback (/projects/challenge/node_modules/@testing-library/dom/dist/wait-for.js:121:16)
+    at Timeout.task [as _onTimeout] (/projects/challenge/node_modules/jsdom/lib/jsdom/browser/Window.js:516:19)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
